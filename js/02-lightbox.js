@@ -6,7 +6,7 @@ const gallery = document.querySelector(".gallery");
 const arrayGallery = galleryItems.map(
   (
     item
-  ) => `<li><a class="gallery__item" href="${itam.original}"><img class="gallery__image"
+  ) => `<li><a class="gallery__item" href="${item.original}"><img class="gallery__image"
   src="${item.preview}" alt="${item.description}"/></a></li>`
 );
 
@@ -19,3 +19,5 @@ const lightbox = new SimpleLightbox(".gallery a", {
   captionPosition: "bottom",
   captionDelay: 250,
 });
+
+console.log(galleryItems);
