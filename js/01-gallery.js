@@ -16,8 +16,6 @@ gallery.addEventListener("click", (event) => {
     return;
   }
 
-  const image = clicked.data.source;
-
   const lightbox = basicLightbox.create(
     `
     <img src="${event.target.dataset.source}" width="800" height="600">`,
